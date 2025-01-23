@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timerText.text = timer.ToString("F2");
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
         if (timer <= 0)
         {
