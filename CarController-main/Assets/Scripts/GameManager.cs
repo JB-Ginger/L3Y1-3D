@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timerText.text = timer.ToString("F2");
+        
+        if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
